@@ -5,7 +5,7 @@ class RouletteBetting {
     }
 
     placeBet(name, numbers, betAmount) {
-        numbers = numbers.split(',').map(num => parseInt(num, 10));
+        numbers = numbers.split(',').map(num => (num.toString(), 10));
         betAmount = parseInt(betAmount, 10);
         this.bets.push({ name, numbers, betAmount });
         this.updateCurrentBetsDisplay();
